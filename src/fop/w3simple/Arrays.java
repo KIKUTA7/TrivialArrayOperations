@@ -1,23 +1,38 @@
 package fop.w3simple;
 
 public class Arrays extends MiniJava {
+    public static void main (String [] args)
+    {
+        print (new int [] {1,2,3});
+    }
     public static void print(int[] arr) {
-	// TODO
+        int i=0;
+        writeConsole ("{");
+        while (i < arr.length -1)
+        {
+            writeConsole(arr[i]);
+            writeConsole(",");
+
+i++;
+
+        }
+        writeConsole(arr[arr.length-1]);
+        write("}");
     }
 
     public static void minAndMax(int[] arr) {
-	// TODO
+
     }
 
     public static int[] invert(int[] arr) {
-	// TODO
+	return new int [] {1,2,3};
     }
 
     public static int[] cut(int[] arr, int len) {
-	// TODO
+        return new int [] {1,2,3};
     }
 
     public static int[] linearize(int[][] arr) {
-	// TODO
+        return new int [] {1,2,3};
     }
 }
