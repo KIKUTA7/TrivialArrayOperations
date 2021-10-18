@@ -2,7 +2,6 @@ package fop.w3simple;
 
 public class Arrays extends MiniJava {
 
-
     public static void print(int[] arr) {
         int i = 0;
         writeConsole("{");
@@ -45,21 +44,24 @@ if(i!=arr.length -1)            writeConsole(", ");
 
 
     public static int[] cut(int[] arr, int len) {
-        int [] c = arr.clone();
-        if(len> arr.length)
+
+        if(len > arr.length)
         {
             int [] b = new int [len];
 
             int i=0;
             while (i<arr.length)
             {
-                b[i] = c[i];
+                b[i] = arr[i];
 i++;
             }
+            while (i<len)
+            {    b[i] = 0;
+            i++;}
             return b;
         }
         else {
-            int [] b = new int [arr.length - len+1] ;
+            int [] b = new int [arr.length -(arr.length -len) ] ;
             int i=0;
             while (i<b.length)
             {
