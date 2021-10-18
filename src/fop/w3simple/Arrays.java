@@ -8,7 +8,7 @@ public class Arrays extends MiniJava {
         writeConsole("{");
         while (i < arr.length - 1) {
             writeConsole(arr[i]);
-            writeConsole(",");
+            writeConsole(", ");
 
 
             i++;
