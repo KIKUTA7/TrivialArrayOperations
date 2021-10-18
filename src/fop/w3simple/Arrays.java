@@ -6,15 +6,15 @@ public class Arrays extends MiniJava {
     public static void print(int[] arr) {
         int i = 0;
         writeConsole("{");
-        while (i < arr.length - 1) {
+        while (i < arr.length ) {
             writeConsole(arr[i]);
-            writeConsole(", ");
+if(i!=arr.length -1)            writeConsole(", ");
 
 
             i++;
 
         }
-        writeConsole(arr[arr.length - 1]);
+
         writeConsole("}");
     }
 
